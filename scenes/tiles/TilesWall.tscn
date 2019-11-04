@@ -1,0 +1,336 @@
+[gd_scene load_steps=4 format=2]
+
+[ext_resource path="res://sprites/DungeonTileset.png" type="Texture" id=1]
+
+[sub_resource type="RectangleShape2D" id=1]
+extents = Vector2( 8, 8 )
+
+[sub_resource type="SegmentShape2D" id=3]
+a = Vector2( 3, 0 )
+b = Vector2( 3, 16 )
+
+[node name="Node2D" type="Node2D"]
+
+[node name="DungeonWall-1" type="Sprite" parent="."]
+editor/display_folded = true
+texture = ExtResource( 1 )
+centered = false
+region_enabled = true
+region_rect = Rect2( 0, 0, 16, 16 )
+
+[node name="Body" type="StaticBody2D" parent="DungeonWall-1"]
+
+[node name="Collision" type="CollisionShape2D" parent="DungeonWall-1/Body"]
+position = Vector2( 8, 8 )
+shape = SubResource( 1 )
+
+[node name="DungeonWall-2" type="Sprite" parent="."]
+editor/display_folded = true
+position = Vector2( 16, 0 )
+texture = ExtResource( 1 )
+centered = false
+region_enabled = true
+region_rect = Rect2( 16, 0, 16, 16 )
+
+[node name="Body" type="StaticBody2D" parent="DungeonWall-2"]
+
+[node name="Collision" type="CollisionShape2D" parent="DungeonWall-2/Body"]
+position = Vector2( 8, 8 )
+shape = SubResource( 1 )
+
+[node name="DungeonWall-3" type="Sprite" parent="."]
+editor/display_folded = true
+position = Vector2( 32, 0 )
+texture = ExtResource( 1 )
+centered = false
+region_enabled = true
+region_rect = Rect2( 32, 0, 16, 16 )
+
+[node name="Body" type="StaticBody2D" parent="DungeonWall-3"]
+
+[node name="Collision" type="CollisionShape2D" parent="DungeonWall-3/Body"]
+position = Vector2( 8, 8 )
+shape = SubResource( 1 )
+
+[node name="DungeonWall-4" type="Sprite" parent="."]
+editor/display_folded = true
+position = Vector2( 48, 0 )
+texture = ExtResource( 1 )
+centered = false
+region_enabled = true
+region_rect = Rect2( 48, 0, 16, 16 )
+
+[node name="Body" type="StaticBody2D" parent="DungeonWall-4"]
+
+[node name="Collision" type="CollisionShape2D" parent="DungeonWall-4/Body"]
+position = Vector2( 8, 8 )
+shape = SubResource( 1 )
+
+[node name="DungeonWall-5" type="Sprite" parent="."]
+editor/display_folded = true
+position = Vector2( 64, 0 )
+texture = ExtResource( 1 )
+centered = false
+region_enabled = true
+region_rect = Rect2( 64, 0, 16, 16 )
+
+[node name="Body" type="StaticBody2D" parent="DungeonWall-5"]
+
+[node name="Collision" type="CollisionShape2D" parent="DungeonWall-5/Body"]
+position = Vector2( 8, 8 )
+shape = SubResource( 1 )
+
+[node name="DungeonWall-6" type="Sprite" parent="."]
+editor/display_folded = true
+position = Vector2( 0, 16 )
+texture = ExtResource( 1 )
+centered = false
+region_enabled = true
+region_rect = Rect2( 0, 16, 16, 16 )
+
+[node name="Body" type="StaticBody2D" parent="DungeonWall-6"]
+
+[node name="Collision" type="CollisionShape2D" parent="DungeonWall-6/Body"]
+position = Vector2( 8, 8 )
+shape = SubResource( 1 )
+
+[node name="DungeonWall-7" type="Sprite" parent="."]
+editor/display_folded = true
+position = Vector2( 16, 16 )
+texture = ExtResource( 1 )
+centered = false
+region_enabled = true
+region_rect = Rect2( 16, 16, 16, 16 )
+
+[node name="Body" type="StaticBody2D" parent="DungeonWall-7"]
+
+[node name="Collision" type="CollisionShape2D" parent="DungeonWall-7/Body"]
+position = Vector2( 8, 8 )
+shape = SubResource( 1 )
+
+[node name="DungeonWall-8" type="Sprite" parent="."]
+editor/display_folded = true
+position = Vector2( 32, 16 )
+texture = ExtResource( 1 )
+centered = false
+region_enabled = true
+region_rect = Rect2( 32, 16, 16, 16 )
+
+[node name="Body" type="StaticBody2D" parent="DungeonWall-8"]
+
+[node name="Collision" type="CollisionShape2D" parent="DungeonWall-8/Body"]
+position = Vector2( 8, 8 )
+shape = SubResource( 1 )
+
+[node name="DungeonWall-9" type="Sprite" parent="."]
+editor/display_folded = true
+position = Vector2( 48, 16 )
+texture = ExtResource( 1 )
+centered = false
+region_enabled = true
+region_rect = Rect2( 48, 16, 16, 16 )
+
+[node name="Body" type="StaticBody2D" parent="DungeonWall-9"]
+
+[node name="Collision" type="CollisionShape2D" parent="DungeonWall-9/Body"]
+position = Vector2( 8, 8 )
+shape = SubResource( 1 )
+
+[node name="DungeonWall-10" type="Sprite" parent="."]
+editor/display_folded = true
+position = Vector2( 64, 16 )
+texture = ExtResource( 1 )
+centered = false
+region_enabled = true
+region_rect = Rect2( 64, 16, 16, 16 )
+
+[node name="Body" type="StaticBody2D" parent="DungeonWall-10"]
+
+[node name="Collision" type="CollisionShape2D" parent="DungeonWall-10/Body"]
+position = Vector2( 8, 8 )
+shape = SubResource( 1 )
+
+[node name="DungeonWall-11" type="Sprite" parent="."]
+editor/display_folded = true
+position = Vector2( 0, 32 )
+texture = ExtResource( 1 )
+centered = false
+region_enabled = true
+region_rect = Rect2( 0, 32, 16, 16 )
+
+[node name="Body" type="StaticBody2D" parent="DungeonWall-11"]
+
+[node name="Collision" type="CollisionShape2D" parent="DungeonWall-11/Body"]
+position = Vector2( 8, 8 )
+shape = SubResource( 1 )
+
+[node name="DungeonWall-12" type="Sprite" parent="."]
+position = Vector2( 16, 32 )
+texture = ExtResource( 1 )
+centered = false
+region_enabled = true
+region_rect = Rect2( 16, 32, 16, 16 )
+
+[node name="DungeonWall-13" type="Sprite" parent="."]
+editor/display_folded = true
+position = Vector2( 32, 32 )
+texture = ExtResource( 1 )
+centered = false
+region_enabled = true
+region_rect = Rect2( 32, 32, 16, 16 )
+
+[node name="Body" type="StaticBody2D" parent="DungeonWall-13"]
+
+[node name="Collision" type="CollisionShape2D" parent="DungeonWall-13/Body"]
+position = Vector2( 8, 8 )
+shape = SubResource( 1 )
+
+[node name="DungeonWall-14" type="Sprite" parent="."]
+editor/display_folded = true
+position = Vector2( 48.0795, 32 )
+texture = ExtResource( 1 )
+centered = false
+region_enabled = true
+region_rect = Rect2( 48, 32, 16, 16 )
+
+[node name="Body" type="StaticBody2D" parent="DungeonWall-14"]
+position = Vector2( -0.0794563, 0 )
+
+[node name="Collision" type="CollisionShape2D" parent="DungeonWall-14/Body"]
+shape = SubResource( 3 )
+
+[node name="DungeonWall-15" type="Sprite" parent="."]
+editor/display_folded = true
+position = Vector2( 64, 32 )
+texture = ExtResource( 1 )
+centered = false
+region_enabled = true
+region_rect = Rect2( 64, 32, 16, 16 )
+
+[node name="Body" type="StaticBody2D" parent="DungeonWall-15"]
+
+[node name="Collision" type="CollisionShape2D" parent="DungeonWall-15/Body"]
+position = Vector2( 10, 0 )
+shape = SubResource( 3 )
+
+[node name="DungeonWall-16" type="Sprite" parent="."]
+editor/display_folded = true
+position = Vector2( 0, 48 )
+texture = ExtResource( 1 )
+centered = false
+region_enabled = true
+region_rect = Rect2( 0, 48, 16, 16 )
+
+[node name="Body" type="StaticBody2D" parent="DungeonWall-16"]
+
+[node name="Collision" type="CollisionShape2D" parent="DungeonWall-16/Body"]
+position = Vector2( 8, 8 )
+shape = SubResource( 1 )
+
+[node name="DungeonWall-17" type="Sprite" parent="."]
+position = Vector2( 16, 48 )
+texture = ExtResource( 1 )
+centered = false
+region_enabled = true
+region_rect = Rect2( 16, 48, 16, 16 )
+
+[node name="Body" type="StaticBody2D" parent="DungeonWall-17"]
+
+[node name="Collision" type="CollisionShape2D" parent="DungeonWall-17/Body"]
+position = Vector2( 8, 8 )
+shape = SubResource( 1 )
+
+[node name="DungeonWall-18" type="Sprite" parent="."]
+position = Vector2( 32, 48 )
+texture = ExtResource( 1 )
+centered = false
+region_enabled = true
+region_rect = Rect2( 32, 48, 16, 16 )
+
+[node name="Body" type="StaticBody2D" parent="DungeonWall-18"]
+
+[node name="Collision" type="CollisionShape2D" parent="DungeonWall-18/Body"]
+position = Vector2( 8, 8 )
+shape = SubResource( 1 )
+
+[node name="DungeonWall-19" type="Sprite" parent="."]
+editor/display_folded = true
+position = Vector2( 48, 48 )
+texture = ExtResource( 1 )
+centered = false
+region_enabled = true
+region_rect = Rect2( 48, 48, 16, 16 )
+
+[node name="Body" type="StaticBody2D" parent="DungeonWall-19"]
+
+[node name="Collision" type="CollisionShape2D" parent="DungeonWall-19/Body"]
+position = Vector2( 8, 8 )
+shape = SubResource( 1 )
+
+[node name="DungeonWall-20" type="Sprite" parent="."]
+position = Vector2( 64, 48 )
+texture = ExtResource( 1 )
+centered = false
+region_enabled = true
+region_rect = Rect2( 64, 48, 16, 16 )
+
+[node name="Body" type="StaticBody2D" parent="DungeonWall-20"]
+
+[node name="Collision" type="CollisionShape2D" parent="DungeonWall-20/Body"]
+position = Vector2( 8, 8 )
+shape = SubResource( 1 )
+
+[node name="DungeonWall-21" type="Sprite" parent="."]
+position = Vector2( 80, 0 )
+texture = ExtResource( 1 )
+centered = false
+region_enabled = true
+region_rect = Rect2( 96, 16, 16, 16 )
+
+[node name="Body" type="StaticBody2D" parent="DungeonWall-21"]
+
+[node name="Collision" type="CollisionShape2D" parent="DungeonWall-21/Body"]
+position = Vector2( 8, 8 )
+shape = SubResource( 1 )
+
+[node name="DungeonWall-22" type="Sprite" parent="."]
+editor/display_folded = true
+position = Vector2( 80, 16 )
+texture = ExtResource( 1 )
+centered = false
+region_enabled = true
+region_rect = Rect2( 96, 32, 16, 16 )
+
+[node name="Body" type="StaticBody2D" parent="DungeonWall-22"]
+
+[node name="Collision" type="CollisionShape2D" parent="DungeonWall-22/Body"]
+position = Vector2( 8, 8 )
+shape = SubResource( 1 )
+
+[node name="DungeonWall-23" type="Sprite" parent="."]
+editor/display_folded = true
+position = Vector2( 96, 0 )
+texture = ExtResource( 1 )
+centered = false
+region_enabled = true
+region_rect = Rect2( 144, 16, 16, 16 )
+
+[node name="Body" type="StaticBody2D" parent="DungeonWall-23"]
+
+[node name="Collision" type="CollisionShape2D" parent="DungeonWall-23/Body"]
+position = Vector2( 8, 8 )
+shape = SubResource( 1 )
+
+[node name="DungeonWall-24" type="Sprite" parent="."]
+position = Vector2( 96, 16 )
+texture = ExtResource( 1 )
+centered = false
+region_enabled = true
+region_rect = Rect2( 144, 32, 16, 16 )
+
+[node name="Body" type="StaticBody2D" parent="DungeonWall-24"]
+editor/display_folded = true
+
+[node name="Collision" type="CollisionShape2D" parent="DungeonWall-24/Body"]
+position = Vector2( 8, 8 )
+shape = SubResource( 1 )

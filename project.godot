@@ -16,8 +16,14 @@ _global_script_class_icons={
 [application]
 
 config/name="Dungeon RPG"
+run/main_scene="res://scenes/Development.tscn"
 config/icon="res://icon.png"
+
+[display]
+
+window/size/height=576
 
 [rendering]
 
+environment/default_clear_color=Color( 0, 0, 0, 1 )
 environment/default_environment="res://default_env.tres"
