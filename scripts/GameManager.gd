@@ -1,4 +1,4 @@
- extends Node2D
+extends Node2D
 
 onready var player_variables = $"/root/PlayerVariables"
 onready var battle_variables = $"/root/BattleVariables"
@@ -14,15 +14,14 @@ func _ready():
 	player_variables.gold = 0
 
 func _process(delta):
-	time_current += delta
-	if(time_current >= time_delay):
-		if(battle_variables.in_battle):
-			print("Turn")
+	if(battle_variables.in_battle):
+		time_current += delta
+		if(time_current >= time_delay):
 			_battle()
-		time_current = 0
+			time_current = 0
 
 func _battle():
-	print("Player " + str(player_variables.life) + " Enemy " + str(battle_variables.enemy.life))
+	$ImpactFX.play()
 	if(is_turn_player):
 		var damagePlayer = _calculate_damage(player_variables.attack, battle_variables.enemy.defense)
 		player_variables.life -= damagePlayer
