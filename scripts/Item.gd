@@ -13,5 +13,6 @@ func _effect():
 		$"/root/PlayerVariables".defense += increase_points
 
 func _on_PotionLifeP_area_entered(area):
+	area.sound_collect()
 	_effect()
 	queue_free()
