@@ -19,6 +19,11 @@ config/name="Dungeon RPG"
 run/main_scene="res://scenes/Development.tscn"
 config/icon="res://icon.png"
 
+[autoload]
+
+PlayerVariables="*res://scripts/PlayerVariables.gd"
+BattleVariables="*res://scripts/BattleVariables.gd"
+
 [display]
 
 window/size/height=576
