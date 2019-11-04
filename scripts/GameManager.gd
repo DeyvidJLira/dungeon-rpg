@@ -24,10 +24,10 @@ func _battle():
 	$ImpactFX.play()
 	if(is_turn_player):
 		var damagePlayer = _calculate_damage(player_variables.attack, battle_variables.enemy.defense)
-		player_variables.life -= damagePlayer
+		battle_variables.enemy.life -= damagePlayer
 	else:
 		var damageEnemy = _calculate_damage(battle_variables.enemy.attack, player_variables.defense)
-		battle_variables.enemy.life -= damageEnemy
+		player_variables.life -= damageEnemy
 	is_turn_player = !is_turn_player
 	if(player_variables.life <= 0 or battle_variables.enemy.life <= 0):
 		if battle_variables.enemy.life <= 0:
